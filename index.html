@@ -561,19 +561,6 @@
         if (singleBtn) { singleBtn.disabled = false; }
       };
 
-      window.__markReady = function (alreadyJailbroken) {
-        setProgress(100, alreadyJailbroken
-          ? 'jailbreak already active — payload sender ready'
-          : 'ready — press L2');
-        hint.classList.add('ready');
-        hint.innerHTML = '<b>X</b> select &nbsp;·&nbsp; <b>L2</b> run selected &nbsp;·&nbsp; <b>R1</b> etaHEN only';
-
-        const sendBtn   = document.getElementById('sendBtn');
-        const singleBtn = document.getElementById('singleBtn');
-        if (sendBtn)   { sendBtn.disabled = false; }
-        if (singleBtn) { singleBtn.disabled = false; }
-      };
-
       window.__setHint = function (txt) { hint.textContent = txt; };
 
       /* Already-jailbroken fast path */
