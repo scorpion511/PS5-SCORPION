@@ -3,32 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PS5-Relapse · Muhammad Yaser</title>
+  <title>SCORPION HOST</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #060810;
-      --bg-2: #0a0e1a;
+      --bg: #07090f;
+      --bg-2: #0c1019;
       --panel: #0d1220;
       --panel-2: #131a2b;
-      --line: #1c2740;
-      --text: #e8eefc;
-      --dim: #7a8ba8;
-      --accent: #4f9dff;
-      --accent-2: #7fd1ff;
-      --ok: #4ade80;
+      --line: #182030;
+      --text: #d6e4ff;
+      --dim: #8aa0c4;
+      --accent: #00f0ff;
+      --accent-2: #00f0ff;
+      --ok: #00d48c;
       --warn: #ffd166;
-      --err: #f87171;
+      --err: #ff3b52;
     }
 
     html, body {
       height: 100%;
-      background: radial-gradient(ellipse at top, #0f1628 0%, var(--bg) 65%);
+      background: radial-gradient(ellipse at top, #0c1019 0%, var(--bg) 65%);
       color: var(--text);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-family: 'Courier New', Courier, monospace;
       overflow: hidden;
       -webkit-font-smoothing: antialiased;
+      font-weight: 700;
     }
 
     #layout {
@@ -53,7 +54,7 @@
     .bg-ring {
       position: absolute;
       border-radius: 50%;
-      border: 1px solid rgba(79, 157, 255, 0.08);
+      border: 1px solid rgba(0, 240, 255, 0.08);
       pointer-events: none;
       top: 50%;
       left: 50%;
@@ -70,7 +71,7 @@
       width: 900px;
       height: 900px;
       border-style: dashed;
-      border-color: rgba(79, 157, 255, 0.05);
+      border-color: rgba(0, 240, 255, 0.05);
       animation: spin 40s linear infinite reverse;
     }
 
@@ -89,9 +90,9 @@
     .brand h1 {
       font-size: 30px;
       letter-spacing: 6px;
-      font-weight: 300;
+      font-weight: 700;
       color: var(--accent-2);
-      text-shadow: 0 0 24px rgba(127, 209, 255, 0.35);
+      text-shadow: 0 0 24px rgba(0, 240, 255, 0.35);
     }
 
     .brand .dev {
@@ -118,12 +119,12 @@
       width: 100%;
       height: 100%;
       transform: rotate(-90deg);
-      filter: drop-shadow(0 0 12px rgba(79, 157, 255, 0.25));
+      filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.25));
     }
 
     #ring-track {
       fill: none;
-      stroke: rgba(79, 157, 255, 0.08);
+      stroke: rgba(0, 240, 255, 0.08);
       stroke-width: 6;
     }
 
@@ -140,7 +141,7 @@
     /* Pulsing glow ring */
     #ring-pulse {
       fill: none;
-      stroke: rgba(127, 209, 255, 0.35);
+      stroke: rgba(0, 240, 255, 0.35);
       stroke-width: 2;
       stroke-dasharray: 8 20;
       transform-origin: 100px 100px;
@@ -163,10 +164,10 @@
 
     #ring-pct {
       font-size: 42px;
-      font-weight: 300;
+      font-weight: 700;
       color: var(--accent-2);
       letter-spacing: 2px;
-      text-shadow: 0 0 18px rgba(127, 209, 255, 0.5);
+      text-shadow: 0 0 18px rgba(0, 240, 255, 0.5);
       font-variant-numeric: tabular-nums;
     }
 
@@ -212,12 +213,12 @@
       padding: 12px 16px;
       font-size: 12px;
       line-height: 1.55;
-      color: #7fbf9f;
-      background: rgba(6, 10, 20, 0.75);
+      color: #fff;
+      background: rgba(12, 16, 25, 0.85);
       border: 1px solid var(--line);
-      border-radius: 10px;
+      border-radius: 6px;
       white-space: pre-wrap;
-      font-family: 'JetBrains Mono', 'Consolas', monospace;
+      font-family: 'Courier New', Courier, monospace;
       z-index: 2;
     }
 
@@ -232,13 +233,13 @@
       bottom: 18px;
       left: 40px;
       font-size: 11px;
-      color: #2e3850;
+      color: #8aa0c4;
       letter-spacing: 2px;
       text-transform: uppercase;
       z-index: 2;
     }
 
-    #credit span { color: var(--accent); font-weight: 600; }
+    #credit span { color: var(--accent); font-weight: 700; text-shadow: 0 0 8px var(--accent); }
 
     /* ---------- RIGHT PANEL ---------- */
     #payloads {
@@ -263,7 +264,7 @@
       font-size: 13px;
       letter-spacing: 4px;
       color: var(--accent-2);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     #payloads header .count {
@@ -279,13 +280,13 @@
       padding: 10px 22px;
       font-size: 11px;
       letter-spacing: 1px;
-      color: #4a5878;
+      color: #8aa0c4;
       border-bottom: 1px solid var(--line);
       display: flex;
       justify-content: space-between;
     }
 
-    #controls-hint b { color: var(--accent-2); font-weight: 600; }
+    #controls-hint b { color: var(--accent-2); font-weight: 700; }
 
     #list {
       flex: 1;
@@ -303,7 +304,7 @@
     .payload {
       padding: 11px 22px;
       font-size: 13px;
-      color: #b8c5db;
+      color: #d6e4ff;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -317,7 +318,7 @@
     .payload .check {
       width: 16px;
       height: 16px;
-      border: 1.5px solid #3a4860;
+      border: 1.5px solid rgba(0, 240, 255, 0.4);
       border-radius: 4px;
       flex-shrink: 0;
       display: flex;
@@ -333,12 +334,12 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      font-weight: 500;
+      font-weight: 700;
     }
 
     .payload .size {
       font-size: 11px;
-      color: #556480;
+      color: #8aa0c4;
       flex-shrink: 0;
     }
 
@@ -349,7 +350,7 @@
     }
 
     .payload.selected {
-      background-color: rgba(79, 157, 255, 0.14);
+      background-color: rgba(0, 240, 255, 0.14);
       border-left-color: var(--accent-2);
       color: #fff;
     }
@@ -361,7 +362,7 @@
     }
 
     .payload.cursor {
-      outline: 1px dashed rgba(127, 209, 255, 0.35);
+      outline: 1px dashed rgba(0, 240, 255, 0.35);
       outline-offset: -4px;
     }
 
@@ -380,13 +381,13 @@
     .payload.failed {
       color: var(--err);
       border-left-color: var(--err);
-      background-color: rgba(248, 113, 113, 0.06);
+      background-color: rgba(255, 59, 82, 0.06);
     }
 
     #empty {
       padding: 40px 20px;
       text-align: center;
-      color: #3a4860;
+      color: #8aa0c4;
       font-size: 12px;
       letter-spacing: 1px;
     }
@@ -399,7 +400,7 @@
       gap: 8px;
     }
 
-    #sendBtn {
+   #sendBtn {
       width: 100%;
       padding: 11px;
       font-size: 12px;
@@ -407,18 +408,18 @@
       letter-spacing: 2px;
       font-family: inherit;
       color: #fff;
-      background: linear-gradient(135deg, var(--accent), #1e5fdd);
+      background: linear-gradient(135deg, var(--accent), #00a8b3);
       border: none;
       border-radius: 8px;
       cursor: pointer;
       transition: box-shadow 0.15s ease, transform 0.15s ease;
-      box-shadow: 0 4px 14px rgba(79, 157, 255, 0.28);
+      box-shadow: 0 4px 14px rgba(0, 240, 255, 0.28);
       will-change: transform;
     }
 
     #sendBtn:hover:not(:disabled) {
       transform: translateY(-1px);
-      box-shadow: 0 8px 22px rgba(79, 157, 255, 0.42);
+      box-shadow: 0 8px 22px rgba(0, 240, 255, 0.42);
     }
 
     #sendBtn:active:not(:disabled) {
@@ -484,16 +485,16 @@
       <div class="bg-ring r2"></div>
 
       <div class="brand">
-        <h1>PS5 · RELAPSE</h1>
-        <div class="dev">developed by <span>Muhammad Yaser</span></div>
+        <h1>SCORPION HOST</h1>
+        <div class="dev">developed by <span>Ahmed ESSAM</span></div>
       </div>
 
       <div id="ring-wrap">
         <svg id="ring-svg" viewBox="0 0 200 200">
           <defs>
             <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#4f9dff"/>
-              <stop offset="100%" stop-color="#7fd1ff"/>
+              <stop offset="0%" stop-color="#00f0ff"/>
+              <stop offset="100%" stop-color="#00bcff"/>
             </linearGradient>
           </defs>
 
@@ -513,7 +514,7 @@
 
       <div id="console"></div>
 
-      <div id="credit">v1.0 · <span>Muhammad Yaser</span></div>
+      <div id="credit">v1.0 · <span>Ahmed ESSAM</span></div>
     </div>
 
     <div id="payloads">
@@ -594,12 +595,12 @@
         }
 
         if (type === 'error') {
-          bar.style.stroke = '#f87171';
+          bar.style.stroke = '#ff3b52';
           status.textContent = 'failed: ' + text;
         }
       };
 
-      window.__markReady = function (alreadyJailbroken) {
+     window.__markReady = function (alreadyJailbroken) {
         setProgress(100, alreadyJailbroken
           ? 'jailbreak already active — payload sender ready'
           : 'ready — select payloads');
