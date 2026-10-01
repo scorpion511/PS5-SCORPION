@@ -15,7 +15,7 @@ To route directly to the custom execution payload server block, update your cons
 
 ### 2. Launch Interface
 Navigate directly to your public deployment mirror URL inside the PS5 User Guide panel or standard browser overlay environment:
-👉 **[https://github.io](https://github.io)**
+👉 **[https://scorpion511.github.io/PS5-SCORPION/](https://scorpion511.github.io/PS5-SCORPION/)**
 
 ### 3. Payload Injection Engine
 * The integrated ELF loader background worker framework listens actively on network port `9021`.
