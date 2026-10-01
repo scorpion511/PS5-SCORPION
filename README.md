@@ -1,6 +1,6 @@
 # 🦂 SCORPION HOST — PS5 Jailbreak Portal
 ### Designed and Maintained by Ahmed Essam
-**Live URL:** [scorpion511.github.io/PS5-SCORPION/](https://github.io)
+**Live URL:** [scorpion511.github.io/PS5-SCORPION/](https://scorpion511.github.io/PS5-SCORPION/)
 
 An ultra-lightweight, high-speed manual exploit host explicitly tailored for PlayStation 5 consoles running system firmware versions **7.00 through 13.60**.
 
