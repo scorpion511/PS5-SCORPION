@@ -64,8 +64,11 @@ const ASSETS_TO_CACHE = [
   './payloads/kexp_2026_05_25.bin',
   './payloads/kstuff.elf',
   './payloads/shadowmountplus.elf',
-  './payloads/webkit-autoloader-installer_v0.5.0.elf'
+  './payloads/webkit-autoloader-installer_v0.5.2.elf'
   './payloads/ps5-app-dumper_v2.10.elf'
+  './payloads/pldmgr_v0.5.2.elf'
+  './payloads/OnionHEN.elf'
+  
 ];
 
 self.addEventListener('install', (event) => {
