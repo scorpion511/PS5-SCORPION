@@ -25,7 +25,7 @@ Navigate directly to your public deployment mirror URL inside the PS5 User Guide
   * Press **L2** to run all selected payloads sequentially.
   * Press **R1** to instantly run **etaHEN.elf only**.
 
----
+--
 
 ## 📦 Included Payload Packages
 All payloads are actively integrated into the `payloads/` directory and skipped automatically if missing:
