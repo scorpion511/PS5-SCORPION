@@ -68,7 +68,6 @@ const ASSETS_TO_CACHE = [
   './payloads/ps5-app-dumper_v2.10.elf'
   './payloads/pldmgr_v0.5.2.elf'
   './payloads/OnionHEN.elf'
-  
 ];
 
 self.addEventListener('install', (event) => {
