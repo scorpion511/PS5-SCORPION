@@ -58,17 +58,19 @@ const ASSETS_TO_CACHE = [
   './offsets/13.42.js',
   './offsets/13.60.js',
 
-  /* payloads */
-  './payloads/elfldr-ps5-1360.elf',
-  './payloads/etaHEN.elf',
-  './payloads/kexp_2026_05_25.bin',
-  './payloads/kstuff.elf',
-  './payloads/shadowmountplus.elf',
-  './payloads/webkit-autoloader-installer_v0.5.2.elf'
-  './payloads/ps5-app-dumper_v2.10.elf'
-  './payloads/pldmgr_v0.5.2.elf'
-  './payloads/OnionHEN.elf'
+ /* payloads */ 
+[
+  './payloads/elfldr-ps5-1360.elf', 
+  './payloads/etaHEN.elf', 
+  './payloads/kexp_2026_05_25.bin', 
+  './payloads/kstuff.elf', 
+  './payloads/shadowmountplus.elf', 
+  './payloads/webkit-autoloader-installer_v0.5.2.elf', 
+  './payloads/ps5-app-dumper_v2.10.elf', 
+  './payloads/pldmgr_v0.5.2.elf', 
+  './payloads/OnionHEN.elf' 
 ];
+
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
