@@ -59,8 +59,8 @@ const ASSETS_TO_CACHE = [
   './offsets/13.60.js',
 
 /* payloads */ 
-  './payloads/webkit-autoloader-installer_v0.6.1.elf',
-  './payloads/webkit-autoloader-installer_v0.4.0.elf',
+  './payloads/webkit-autoloader-installer_v0.7.1.elf',
+  './payloads/kraken-mount.elf',
   './payloads/webkit-autoloader-installer_v0.5.1.elf',
   './payloads/elfldr-ps5-v0.27-b57d0e9.elf',
   './payloads/webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf',
@@ -77,7 +77,7 @@ const ASSETS_TO_CACHE = [
   './payloads/ProsperoMenu.elf',
   './payloads/LZ4-Game-Compressor.elf',
   './payloads/game-compressor.elf',
-  './payloads/PS5-dump-forge-0.4.0-ps5.elf'
+  './payloads/ps5-dump-forge-0.5.5-ps5.elf'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
