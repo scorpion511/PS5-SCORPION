@@ -59,7 +59,7 @@ const ASSETS_TO_CACHE = [
   './offsets/13.60.js',
 
 /* payloads */ 
-  './payloads/webkit-autoloader-installer_v0.7.1.elf',
+  './payloads/webkit-autoloader-installer_v0.8.1.elf',
   './payloads/kraken-mount.elf',
   './payloads/webkit-autoloader-installer_v0.5.1.elf',
   './payloads/elfldr-ps5-v0.27-b57d0e9.elf',
